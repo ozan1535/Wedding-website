@@ -1,0 +1,1172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.toggle {
+    position: fixed;
+    z-index: 10000;
+    top: 150px;
+    left: 25px;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.toggle span {
+    display: block;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    transition: 300ms;
+}
+
+.toggle:hover span:nth-child(1){
+    position:relative;
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.toggle:hover span:nth-child(2){
+    opacity: 0;
+}
+
+.toggle:hover span:nth-child(3){
+    position: relative;
+    transform: rotate(-45deg);
+    top: -10px;
+}
+
+.yana:hover span:nth-child(1){
+    position: relative;
+    transform: rotate(45deg);
+    top: 0px;
+}
+
+.yana:hover span:nth-child(2){
+    opacity: 0;
+}
+
+.yana:hover span:nth-child(3){
+    position: relative;
+    transform: rotate(-50deg);
+    top: 0px;
+}
+
+.listeleme {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(91, 156, 194);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    left: -230px;
+    transition: 1000ms;
+}
+
+.ayir {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ayir a {
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.ayir span {
+    position: relative;
+    left: 70px;   
+    font-size: 30px; 
+}
+
+.ayir span a {
+    color: black;
+    font-size: 30px;
+    transition: 500ms;
+}
+
+.ayir span a:hover {
+    color: #fff;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(wedding.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -140px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home p {
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: rgb(91, 156, 194);
+    color: #fff;
+    font-size: 20px;
+    transition: 400ms;
+}
+
+#home a:hover {
+    background-color: #fff;
+    color: rgb(91, 156, 194);
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+}
+
+#about .aboutfoto {
+    width: 60vw;
+    height: 100vh;
+    background-image: url(wedding5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about .aboutbilgi {
+    background-color: rgb(219, 219, 146);
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .aboutbilgi p {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+#about .aboutbilgi .skills {
+    width: 500px;
+    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#about .aboutbilgi .lorem1, .lorem2 {
+    width: 500px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+#about .aboutbilgi .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .aboutbilgi .skills .branding, .design, .photo, .experience {
+    width: 400px;
+    height: 20px;
+    background-color: rgb(157, 168, 135);
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+#about .aboutbilgi .skills .ayirma {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .aboutbilgi .skills .branding div {
+    width: 90%;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#about .aboutbilgi .skills .design div {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#about .aboutbilgi .skills .photo div {
+    width: 95%;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#about .aboutbilgi .skills .experience div {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#about .aboutbilgi .lorem1, .lorem2 {
+    text-align: justify;
+}
+
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(187, 219, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio p:nth-child(1) {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+
+#portfolio p:nth-child(2) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfoliophotos {
+    width: 90%;
+    height: 85vh;
+    margin-left: 60px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio .portfoliophotos .kart {
+    width: 250px;
+    height: 210px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    background-color:green;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#portfolio .portfoliophotos .kart img {
+    transition: 600ms;
+}
+
+#portfolio .portfoliophotos .kart:hover img {
+    transform: scale(1.4);
+}
+
+#portfolio .portfoliophotos .kart img {
+    background-size: cover;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(137, 160, 116);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 35px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+#contact .iletisim {
+    width: 90%;
+    height: 85vh;
+    margin-top: 10px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .harita {
+    width: 40%;
+    height: 70vh;
+}
+
+#contact .iletisimform {
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .iletisimform .form {
+    width: 570px;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact .iletisimform .form input {
+    width: 250px;
+    height: 40px;
+    border-radius: 50px;
+    text-indent: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+}
+
+#contact .iletisimform .form textarea {
+    width: 260px;
+    height: 170px;
+    border-radius: 10px;
+    text-indent: 10px;
+    resize: none;
+    outline: none;
+    margin-top: 50px;
+}
+
+#contact .iletisimform .form button {
+    float: right;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#contact .iletisimform .form button:hover {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    
+    .toggle {
+        margin: -5px;
+    }
+
+    .listeleme {
+        left: -300px;
+
+    }
+
+    .listeleme .ayir span {
+        margin-right: 10px;
+
+    }
+
+    #home {
+        background-position-x: -270px;
+        background-position-y: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #home p {
+        font-size: 22px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+    #home a {
+        padding: 8px;
+        border-radius: 40px;
+        font-size: 17px;
+    }
+    
+    #home a:hover {
+        background-color: #fff;
+        color: rgb(91, 156, 194);
+    }
+    
+    #about .aboutfoto {
+        display: none;
+    }
+    
+    #about .aboutbilgi {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about .aboutbilgi p {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #about .aboutbilgi .skills {
+        width: 350px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #about .aboutbilgi .lorem1, .lorem2 {
+        width: 350px;
+        height: 200px;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    
+    #about .aboutbilgi .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about .aboutbilgi .skills .branding, .design, .photo, .experience {
+        width: 350px;
+    }
+    
+    #about .aboutbilgi .skills .ayirma {
+        width: 350px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #portfolio {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(187, 219, 157);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #portfolio p:nth-child(1) {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 35px;
+        padding-top: 20px;
+        color: #fff;
+        
+    }
+    
+    
+    #portfolio p:nth-child(2) {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #portfolio .portfoliophotos {
+        width: 90%;
+        height: 75vh;
+        margin-left: 1px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #portfolio .portfoliophotos .kart {
+        width: 140px;
+        height: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    #portfolio .portfoliophotos .kart:nth-child(2n){
+        display: none;
+    }
+    
+    #portfolio .portfoliophotos .kart img {
+        transition: 600ms;
+    }
+    
+    #portfolio .portfoliophotos .kart:hover img {
+        transform: scale(1.4);
+    }
+    
+    #portfolio .portfoliophotos .kart img {
+        background-size: cover;
+    }
+
+    #contact {
+        width: 100%;
+        height: 170vh;
+        background-color: rgb(137, 160, 116);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #contact p {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 35px;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    #contact .iletisim {
+        width: 320px;
+        height: 150vh;
+        margin-top: 1px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #contact .harita {
+        width: 300px;
+        height: 400px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #contact .harita iframe {
+        width: 300px;
+        height: 400px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #contact .iletisimform {
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    
+    #contact .iletisimform .form {
+        width: 320px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #contact .iletisimform .form div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .iletisimform .form div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #contact .iletisimform .form input {
+        width: 250px;
+        height: 40px;
+        border-radius: 50px;
+        text-indent: 10px;
+        margin: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    #contact .iletisimform .form textarea {
+        width: 250px;
+        height: 170px;
+        border-radius: 10px;
+        text-indent: 10px;
+        resize: none;
+        outline: none;
+        margin-top: -50px;
+    }
+    
+    #contact .iletisimform .form button {
+        float: right;
+        width: 90px;
+        height: 40px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 400ms;
+    }
+    
+    #contact .iletisimform .form button:hover {
+        background-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1300px) {
+    
+    .toggle {
+        margin: -5px;
+    }
+
+    .listeleme {
+        left: -300px;
+
+    }
+
+    .listeleme .ayir span {
+        margin-right: 10px;
+
+    }
+
+    #home {
+        background-position: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #home p {
+        font-size: 40px;
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    
+    #home a {
+        padding: 12px;
+        border-radius: 40px;
+        font-size: 18px;
+    }
+    
+    #home a:hover {
+        background-color: #fff;
+        color: rgb(91, 156, 194);
+    }
+    
+    #about .aboutfoto {
+        display: none;
+    }
+    
+    #about .aboutbilgi {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about .aboutbilgi p {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    #about .aboutbilgi .skills {
+        width: 500px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #about .aboutbilgi .lorem1, .lorem2 {
+        width: 500px;
+        height: 200px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+    #about .aboutbilgi .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about .aboutbilgi .skills .branding, .design, .photo, .experience {
+        width: 500px;
+    }
+    
+    #about .aboutbilgi .skills .ayirma {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #portfolio {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(187, 219, 157);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #portfolio p:nth-child(1) {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 35px;
+        padding-top: 20px;
+        color: #fff;
+        
+    }
+    
+    
+    #portfolio p:nth-child(2) {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+    }
+    
+    #portfolio .portfoliophotos {
+        width: 90%;
+        height: 75vh;
+        margin-left: 1px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #portfolio .portfoliophotos .kart {
+        width: 150px;
+        height: 130px;
+        margin-left: 15px;
+        margin-top: 15px;
+        overflow: hidden;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    #portfolio .portfoliophotos .kart img {
+        transition: 600ms;
+    }
+    
+    #portfolio .portfoliophotos .kart:hover img {
+        transform: scale(1.4);
+    }
+    
+    #portfolio .portfoliophotos .kart img {
+        background-size: cover;
+    }
+
+    #contact {
+        width: 100%;
+        height: 170vh;
+        background-color: rgb(137, 160, 116);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #contact p {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 35px;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    #contact .iletisim {
+        width: 500px;
+        height: 150vh;
+        margin-top: 1px;
+        margin-left: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #contact .harita {
+        width: 500px;
+        height: 450px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    #contact .harita iframe{
+        width: 500px;
+        height: 450px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    #contact .iletisimform {
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #contact .iletisimform .form {
+        width: 500px;
+        height: 280px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #contact .iletisimform .form input {
+        width: 300px;
+        height: 40px;
+        border-radius: 50px;
+        text-indent: 10px;
+        margin: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    #contact .iletisimform .form textarea {
+        width: 300px;
+        height: 160px;
+        border-radius: 10px;
+        text-indent: 10px;
+        resize: none;
+        outline: none;
+        margin-top: 50px;
+    }
+    
+    #contact .iletisimform .form button {
+        float: right;
+        width: 90px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 400ms;
+    }
+    
+    #contact .iletisimform .form button:hover {
+        background-color: transparent;
+    }
+    
+  }
+
+  @media screen and (min-width: 1900px) {
+    
+    .toggle {
+        margin: -5px;
+    }
+
+    .listeleme .ayir span {
+        margin-right: 10px;
+
+    }
+
+    #home {
+        background-position: center;
+        background-position-y: -300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #home p {
+        font-size: 70px;
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    
+    #home a {
+        padding: 20px;
+        border-radius: 40px;
+        font-size: 25px;
+    }
+    
+    #home a:hover {
+        background-color: #fff;
+        color: rgb(91, 156, 194);
+    }
+    
+    #about .aboutfoto {
+        width: 60vw;
+        height: 100vh;
+        background-image: url(wedding5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    
+    #about .aboutbilgi {
+        width: 40vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #about .aboutbilgi p {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 50px;
+        color: #fff;
+    }
+    
+    #about .aboutbilgi .skills {
+        width: 500px;
+        height: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #about .aboutbilgi .lorem1, .lorem2 {
+        width: 700px;
+        height: 300px;
+        margin-top: 5px;
+        font-size: 25px;
+    }
+    
+    #about .aboutbilgi .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about .aboutbilgi .skills .branding, .design, .photo, .experience {
+        width: 500px;
+        height: 30px;
+    }
+    
+    #about .aboutbilgi .skills .ayirma {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about .aboutbilgi .skills .ayirma span {
+        font-size: 25px;
+    }
+    
+    #about .aboutbilgi .skills .branding div {
+        height: 30px;
+    }
+    
+    #about .aboutbilgi .skills .design div {
+        height: 30px;
+
+    }
+    
+    #about .aboutbilgi .skills .photo div {
+        height: 30px;
+    }
+    
+    #about .aboutbilgi .skills .experience div {
+        height: 30px;
+    }
+
+    #portfolio {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(187, 219, 157);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #portfolio p:nth-child(1) {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-size: 70px;
+        padding-top: 20px;
+        color: #fff;
+        
+    }
+    
+    
+    #portfolio p:nth-child(2) {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    #portfolio .portfoliophotos {
+        width: 90%;
+        height: 75vh;
+        margin-left: 1px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #portfolio .portfoliophotos .kart {
+        width: 300px;
+        height: 300px;
+        margin-left: 15px;
+        margin-top: 15px;
+        overflow: hidden;
+        background-size: cover;
+        cursor: pointer;
+    }
+    
+    #portfolio .portfoliophotos .kart img {
+        width: 300px;
+        height: 300px;
+        transition: 600ms;
+    }
+    
+    #portfolio .portfoliophotos .kart:hover img {
+        transform: scale(1.4);
+    }
+    
+    #portfolio .portfoliophotos .kart img {
+        background-size: cover;
+    }
+
+    #contact {
+        width: 100%;
+        height: 140vh;
+        background-color: rgb(137, 160, 116);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #contact p {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 70px;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    #contact .iletisim {
+        width: 1000px;
+        height: 140vh;
+        margin-top: 1px;
+        margin-left: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #contact .harita {
+        width: 1000px;
+        height: 800px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    #contact .harita iframe{
+        width: 1000px;
+        height: 800px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    #contact .iletisimform {
+        width: 800px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #contact .iletisimform .form {
+        width: 800px;
+        height: 400px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #contact .iletisimform .form input {
+        width: 400px;
+        height: 60px;
+        border-radius: 50px;
+        text-indent: 10px;
+        margin: 10px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+    }
+    
+    #contact .iletisimform .form textarea {
+        width: 400px;
+        height: 220px;
+        border-radius: 10px;
+        text-indent: 10px;
+        font-size: 30px;
+        resize: none;
+        outline: none;
+        margin-top: 50px;
+    }
+    
+    #contact .iletisimform .form button {
+        float: right;
+        width: 90px;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 400ms;
+    }
+
+    #contact .iletisimform .form input::placeholder, textarea::placeholder{
+        font-size: 25px;
+    }
+    
+    #contact .iletisimform .form button:hover {
+        background-color: transparent;
+    }
+
+    #contact #ozz {
+        font-size: 30px !important;
+    }
+    
+  }
